@@ -1,4 +1,9 @@
-# XianXia-chatbot
+=== XianXia-chatbot ===
+
+## Description
+Currently WIP, with no prompts setup. Basic features will come before XianXia game prompts.
+
+
 ## Installation
 Instillation instructions: 
 
