@@ -16,7 +16,9 @@ app.use(express.json());
 
 const MODEL_NAME = "gemini-pro";
 const API_KEY = process.env.API_KEY;
-const FILE_PATH = 'C:\\\\shared stuff\\\\non onedrive stuff folder\\\\programming\\\\personal projects\\\\xianxia bot stuff\\\\bot_one - Copy\\\\data\\\\example.txt';
+const FILE_PATH = 'C:\\shared stuff\\non onedrive stuff folder\\programming\\personal projects\\xianxia bot stuff\\Bot_V_2\\data\\example.txt';
+//Remember to put your own file path here for your data folder, sadly this code was made for a direct file path requirement, instead of relative from existing folder. May fix that later.
+//Also use double '\' if just one '\' doesn't work, not sure why.
 
 let fileContent = '';
 
