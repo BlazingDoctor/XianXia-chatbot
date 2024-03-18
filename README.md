@@ -13,6 +13,6 @@ Instillation instructions:
      API_KEY="Paste API Key here"
 
 
-##Running instructions
+## Running instructions
 -run: 'node server.js' in console and go to a browser and search 'localhost:3000' to access chatbot
 -type ctrl + c into terminal to close server, browser should update if you refresh after relaunching it.
