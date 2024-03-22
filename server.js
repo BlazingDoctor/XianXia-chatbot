@@ -55,9 +55,21 @@ async function runChat(userInput) {
   };
   const safetySettings = [
     {
-      category: HarmCategory.HARM_CATEGORY_HARASSMENT,
-      threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+      category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+      threshold: HarmBlockThreshold.BLOCK_NONE, 
     },
+    {
+      category: HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+      threshold: HarmBlockThreshold.BLOCK_NONE, 
+    },
+    {
+      category: HarmCategory.HARM_CATEGORY_HARASSMENT,
+      threshold: HarmBlockThreshold.BLOCK_NONE, 
+    },
+    {
+      category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+      threshold: HarmBlockThreshold.BLOCK_NONE, 
+    }
   ];
 
   console.log(fileContent);
@@ -66,14 +78,6 @@ async function runChat(userInput) {
     generationConfig,
     safetySettings,
     history: [
-      {
-        role: "user",
-        parts: [{ text: "The following is a string of words: " + fileContent }],
-      },
-      {
-        role: "model",
-        parts: [{ text: "Understood, they are: " + fileContent }],
-      },
     ],
   });
 
